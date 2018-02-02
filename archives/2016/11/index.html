@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>解决GitHub Pages Warning邮件提醒 | Ymmmsick</title>
+  <title>Archives: 2016/11 | Ymmmsick</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -84,7 +84,7 @@
 </head>
 
 <!--
-<body class="post-template">
+<body class="home-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -243,66 +243,37 @@
 
         <!-- ============================ END Hero Image =========================== -->
       
-<section id="intro">
+
+
+<section id="services">
     <div class="container">
-        <div class="row col-md-offset-2">
-            <div class="col-md-8">
-    			<span class="post-meta">
-      <time datetime="2015-07-26T08:44:17.000Z" itemprop="datePublished">
-          2015-07-26
-      </time>
-    
-</span>
-                <h1>解决GitHub Pages Warning邮件提醒</h1>
-            </div>
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="row boxes">
+                    
+                    
+                        
+                        
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                            
+                              <h4 class="title"><a href="/2016/11/18/DroidPlugin与VirturlApp学习/">DroidPlugin与VirturlApp学习</a></h4>
+                            
+                            <p><time datetime="2016-11-18T06:36:38.000Z"><a href="/2016/11/18/DroidPlugin与VirturlApp学习/">2016-11-18</a></time></p>
+                        </div>
+                    
+                </div>
+            </div>    
         </div>
-        <div class="col-md-8 col-md-offset-2">
-      		<p>博客转载自:<a href="http://mayecn.com/blog/2014/05/17/githubpages-accelerating/" target="_blank" rel="external">http://mayecn.com/blog/2014/05/17/githubpages-accelerating/</a></p>
-<p>本文旨在解决每次写博都会收到 Github 的 warning 邮件问题，同时又提升了托管在 Github Pages 上的博客的访问速度。</p>
-<p>　　今天在 v2ex 上看到大学邮箱注册某比特币交易网站送价值 10 刀的比特币的事，于是登陆了许久不用的学校教育网邮箱，然后就发现原来每次生成博客都会收到 Github 的一封 warning 邮件，内容如下：<br>　　<br>　　<br>The page build completed successfully, but returned the following warning:  </p>
-<p>GitHub Pages recently underwent some improvements (<a href="https://github.com/blog/1715-faster-more-awesome-github-pages" target="_blank" rel="external">https://github.com/blog/1715-faster-more-awesome-github-pages</a>) to make your site faster and more awesome, but we’ve noticed that mayecn.com isn’t properly configured to take advantage of these new features. While your site will continue to work just fine, updating your domain’s configuration offers some additional speed and performance benefits. Instructions on updating your site’s IP address can be found at <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records" target="_blank" rel="external">https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages#step-2-configure-dns-records</a>, and of course, you can always get in touch with a human at support@github.com. For the more technical minded folks who want to skip the help docs: your site’s DNS records are pointed to a deprecated IP address.  </p>
-<p>For information on troubleshooting Jekyll see:   </p>
-<p><a href="https://help.github.com/articles/using-jekyll-with-pages#troubleshooting" target="_blank" rel="external">https://help.github.com/articles/using-jekyll-with-pages#troubleshooting</a>  </p>
-<p>If you have any questions please contact us at <a href="https://github.com/contact" target="_blank" rel="external">https://github.com/contact</a>.</p>
-<p>　　其实全文中最重要的就只有这一句话：<br>your site’s DNS records are pointed to a deprecated IP address.  </p>
-<p>　　Github 贴心的提醒我现在的 A 记录指向的是一个不赞成使用的 IP 地址，意思就是如果采用了 Github 新增加的 IP 地址为 A 记录的话博客的访问速度会加快一些。于是使用 dig 命令势在必行。但是 Windows 下如何使用 dig 呢？在这里发现了一个现成的解决方案：Win 下使用 dig<br>　　照做后，在 cmd 下就可以愉快地使用 dig 命令了。执行：<br>dig maye696.github.io +nostats +nocomments +nocmd  </p>
-<p>　　获得如下结果：  </p>
-<p><pre><code><br>C:\Users\w&gt;dig maye696.github.io +nostats +nocomments +nocmd<br>;maye696.github.io. IN A<br>maye696.github.io. 1097 IN CNAME github.map.fastly.net.<br>github.map.fastly.net. 30 IN A 103.245.222.133<br></code></pre><br>　　很明显，你只需把自己的域名的 A 记录改为 103.245.222.133，就会使博客获得更快的访问速度了。同时，也不会每次写博都收到 Github 那“贴心”的邮件了。</p>
+    </div>
+</section> 
 
-            <div class="clearfix"></div>
-            <hr class="nogutter">
+<section id="statement">
+    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
+        <div class="row">
+            <p>人可以一天不吃饭，但是不能一天不学习。</p>
         </div>
-        <nav class="pagination" role="pagination">
-    
-    <a class="pull-left" href="/2015/07/26/7月/" style="float: left;">
-        ← 7月
-    </a>
-    
-    
-    <a class="pull-right" href="/2015/07/26/【git】error-Your-local-changes-to-the-following-files/">
-        【git】error: Your local changes to the following files →
-    </a>
-    
-</nav>
-
-        <div class="duoshuo">
-<div class="ds-thread" data-thread-key="2015/07/26/解决GitHub-Pages-Warning邮件提醒/" data-title="解决GitHub Pages Warning邮件提醒" data-url="http://ymmsick.com/2015/07/26/解决GitHub-Pages-Warning邮件提醒/"></div>
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"ymmsick"};
-(function() {
-	var ds = document.createElement('script');
-	ds.type = 'text/javascript';ds.async = true;
-	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-	ds.charset = 'UTF-8';
-	(document.getElementsByTagName('head')[0] 
-	 || document.getElementsByTagName('body')[0]).appendChild(ds);
-})();
-</script>
-</div>
     </div>
 </section>
-
-
       
 <!-- ============================ Footer =========================== -->
 
