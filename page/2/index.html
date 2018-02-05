@@ -126,9 +126,13 @@
 				    
 				    <li><a href="/categories/Life/" class="animsition-link">Life<small>(2)</small></a></li>
 				    
+				    <li><a href="/categories/Music-Share/" class="animsition-link">Music Share<small>(1)</small></a></li>
+				    
 				    <li><a href="/categories/MySql/" class="animsition-link">MySql<small>(1)</small></a></li>
 				    
 				    <li><a href="/categories/iOS/" class="animsition-link">iOS<small>(2)</small></a></li>
+				    
+				    <li><a href="/categories/letter/" class="animsition-link">letter<small>(1)</small></a></li>
 				    
 				</ul>
         	</li>
@@ -246,6 +250,75 @@
 
 <section id="intro">
     <div class="container">
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2015/07/28/转：-Xcode提示“expression-is-not-assignable”/">转： Xcode提示“expression is not assignable”</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2015-07-28T14:46:54.000Z" itemprop="datePublished">
+          2015-07-28
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        你的问题是：
+
+self.view.frame.size.height = 100f;
+这样写没法通过编译，编译器会报错"expression is not assignable"
+
+原因是，这句话里面的几个点有两种不同的含义。self.view.frame是Objective-C语法，是读取view属性的frame属性，在Objective-C中使用点来访问属性只是一种语法糖，所以self.view.frame这句话会被转换成：
+
+[
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2015/07/28/转：-Xcode提示“expression-is-not-assignable”/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2015/07/27/使用hexo，如果换了电脑怎么更新博客/">使用hexo，如果换了电脑怎么更新博客?</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2015-07-27T02:32:20.000Z" itemprop="datePublished">
+          2015-07-27
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        简单做法:把hexo的source文件放在了另外一个github仓库的master上，也用git来管理，这样不管怎么换电脑都可以很方便的写博客了。
+demo:https://github.com/Ymmmsick/Hexo_source
+
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2015/07/27/使用hexo，如果换了电脑怎么更新博客/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
         
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
